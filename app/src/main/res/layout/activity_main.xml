@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple"
+                tools:context=".MainActivity"
+                android:padding="@dimen/spacing_normal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_placeholder"
+        android:id="@+id/nameView"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_large"
+        android:alpha=".80"
+        android:layout_marginTop="120dp"
+        android:password="false"
+        android:phoneNumber="false"
+        android:layout_below="@+id/appNameView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_name"
+        android:id="@+id/newNameButton"
+        android:textColor="@android:color/white"
+        android:background="@color/red"
+        android:textSize="@dimen/font_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:alpha=".80"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/shareImageView"
+        android:alpha=".80"
+        android:padding="@dimen/spacing_small"
+        android:layout_above="@+id/newNameButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        android:src="@mipmap/ic_share_white_48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burlesque Name Generator"
+        android:id="@+id/appNameView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:alpha=".60"
+        android:textColor="@color/purple_dark"
+        android:textSize="@dimen/font_small"
+        fontPath="fonts/Montserrat-Bold.otf"
+        tools:ignore="MissingPrefix"
+        />
+</RelativeLayout>
